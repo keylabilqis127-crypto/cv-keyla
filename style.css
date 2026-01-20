@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive;
+}
+
+body {
+    background: linear-gradient(to bottom, #ffe6f0, #ffffff);
+    padding: 40px;
+    overflow-x: hidden;
+}
+
+.cv {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    background: #fffafc;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+/* Sidebar kiri */
+.left {
+    width: 30%;
+    background: #ffd6e8;
+    padding: 25px;
+    text-align: center;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.role {
+    font-size: 14px;
+    color: #6b4c6b;
+}
+
+.left hr {
+    margin: 15px 0;
+    border: 1px dashed #e39ac3;
+}
+
+.left ul {
+    list-style: none;
+}
+
+.left li {
+    margin: 6px 0;
+}
+
+/* Konten kanan */
+.right {
+    width: 70%;
+    padding: 30px;
+}
+
+.right section {
+    margin-bottom: 25px;
+}
+
+.right h2 {
+    color: #b04c7a;
+    margin-bottom: 8px;
+}
+
+/* Animasi bunga */
+.flower {
+    position: fixed;
+    top: -50px;
+    font-size: 22px;
+    animation: fall linear infinite;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
